@@ -163,7 +163,7 @@
     <div class="container">
         <div class="login-container">
             <!-- Back Button -->
-            <a href="index.html" class="back-btn">
+            <a href="javascript:history.back()" class="back-btn">
                 <i class="fas fa-arrow-left"></i> Back
             </a>
 
@@ -175,7 +175,8 @@
                 <p>Password: <span id="display-password"></span></p>
             </div>
 
-            <form id=<div class="mb-4">
+            <form id="loginForm">
+                <div class="mb-4">
                     <label for="email" class="form-label" style="color: #026670;">Email Address</label>
                     <input type="email" class="form-control" id="email" name="email" required placeholder="Enter your email">
                 </div>
@@ -185,8 +186,9 @@
                 </div>
                 <button type="submit" class="login-btn">Login</button>
 
-            <!-- Error message container -->
+                <!-- Error message container -->
                 <div id="error-message" class="error-message"></div>
+
             </form>
         </div>
     </div>
